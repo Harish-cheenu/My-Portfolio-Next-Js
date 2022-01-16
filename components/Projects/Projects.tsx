@@ -21,7 +21,7 @@ const Projects = () => {
             Name: 'My Portfolio',
             tech: 'Next Js',
             img: images.Portfolio,
-            link: 'https://github.com/Harish-cheenu'
+            link: 'https://github.com/Harish-cheenu/My-Portfolio-Next-Js'
         }
     ]
     return (

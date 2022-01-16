@@ -1,3 +1,3 @@
 # Hello There,
 
-## [Click me](http://home.com) to see my portfolio.
+## [Click me](https://findharish.netlify.app/) to see my portfolio.
