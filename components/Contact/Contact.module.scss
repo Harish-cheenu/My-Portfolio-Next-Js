@@ -1,0 +1,35 @@
+.Contact__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #252934;
+    height: 80vh;
+
+    .Heading{
+        color: #ffffff;
+        font-size: 25pt;
+        margin: 10% 0 0;
+        border-bottom: 5px solid #ffffff; 
+        text-transform: uppercase;
+    }
+
+    .para{
+        color: #ff7242;
+        margin: 5% 0;
+    }
+    .SocialMedia{
+        width: 200px;
+        margin: 0 0 10% 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        a{
+           svg{
+               &:hover{
+                   fill:#ffff;
+               }
+           }
+        }
+    }
+}

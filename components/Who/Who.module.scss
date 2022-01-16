@@ -1,0 +1,32 @@
+.who__container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 50%;
+
+    @media screen and (max-width:768px) {
+        width: 100%;
+    }
+
+    .Heading{
+        color: hsl(0, 0%, 43%);
+        margin: 3% 0 0 0;
+    }
+    
+    .Para__Container{
+        padding: 1% 0 10% 0;
+        .Para{
+            padding: 0% 10%;
+            font-size: 1.1em;
+            line-height: 1.3em;
+            text-align: center;
+
+            a{
+                margin: 0 4px;
+                color: #009ada;
+            }
+        }
+    }
+
+}
