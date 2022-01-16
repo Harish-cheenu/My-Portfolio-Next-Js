@@ -25,6 +25,10 @@ const Home: NextPage = () => {
     () => import('../components/Contact/Contact'),
     { ssr: false }
   )
+  const Footer = dynamic(
+    () => import('../components/Footer/Footer'),
+    { ssr: false }
+  )
   return (
     <div className={styles.container}>
       <Head>
@@ -40,6 +44,8 @@ const Home: NextPage = () => {
       <Project />
 
       <Contact />
+
+      <Footer />
       
     </div>
   )

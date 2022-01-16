@@ -22,7 +22,7 @@ const Intro = () => {
             </title>
             <Typewriter
                 options={{
-                strings: ['Front-end developer', 'Intern at Fibonalabs, Bangalore.'],
+                strings: ['Front-end developer.', 'Intern at Fibonalabs, Bangalore.'],
                 autoStart: true,
                 loop: true,
                 }}

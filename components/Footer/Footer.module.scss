@@ -1,0 +1,45 @@
+.Footer__wrapper{
+    background-color: #1e242c;
+    padding: 4% 0 2% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .toUp{
+        background-color: #ff7242;
+        position: absolute;
+        top: -20px;
+        right: 5%;
+    }
+
+    .SocialMedia{
+        width: 200px;
+        margin: 0 0 0 0;
+        display: flex;
+        flex-direction: row;
+         justify-content: space-between;
+
+         @media screen and (max-width:481px) {
+             margin: 10% 0 5% 0;
+         }
+
+        a{
+           svg{
+               fill:#ffffff86;
+               &:hover{
+                   fill:#ffff;
+               }
+           }
+        }
+    }
+    .Copy{
+        color: #ffffff86;
+        padding: 3%  0 0 0;
+
+        span{
+            color: #ff7242;
+            margin-left: 5px;
+        }
+    }
+}
