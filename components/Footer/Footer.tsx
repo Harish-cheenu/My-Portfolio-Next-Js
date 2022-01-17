@@ -11,7 +11,7 @@ const Footer = () => {
         {
             Name: 'LinkedIn',
             Icon: <FaLinkedin size={28}/>,
-            Link: "https://www.linkedin.com/in/harish-narayananasamy-1bb16b160/"
+            Link: "https://www.linkedin.com/in/harish-narayanasamy/"
         },
         {
             Name: 'GitHub',
