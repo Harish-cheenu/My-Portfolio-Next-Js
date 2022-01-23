@@ -13,6 +13,11 @@ body {
   font-family: "Montserrat";
   background-color: #ffffff;
   color: #000;
+  scroll-behavior: smooth;
+  // overflow-x: hidden;
+}
+html:focus-within {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -22,6 +27,7 @@ a {
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .Typewriter{

@@ -45,7 +45,7 @@ const Home: NextPage = () => {
 
       <Contact />
 
-      <Footer />
+      <Footer /> 
       
     </div>
   )

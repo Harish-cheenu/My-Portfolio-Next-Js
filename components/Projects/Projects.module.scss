@@ -2,7 +2,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // height: 100vh;
+    position: relative;
+    background-image: linear-gradient(#f7fff6,#E2DBBE);
+
 
     .Heading{
         color: #444649;
@@ -16,82 +18,74 @@
     }
 
     .Container{
-        padding: 5% 0;
-        width: 90%;
+        padding: 5% 0 0 0;
+        width: 100%;
+        overflow: hidden;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
+        align-items: center;
+        justify-content: flex-start;
+        position: relative;
+        @media screen and (max-width:768px) {
+           flex-direction: column;
+        }
 
         .card{
-            position: relative;
-            margin: 4% 2%;
-            transition: all 0.3s ease-in-out;
+            width: 100vw;
+            height: 75vh;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+    
+            @media screen and (max-width:768px) {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+             }
 
             .img{
-                opacity: 1;
-            }
-            .imgHover{
-                z-index: -2;
-                opacity: 0;
                 display: flex;
-                position: absolute;
-                top: 10px;
+                flex-direction: column;
+                align-items: center;
+                width: 75%;
+                // box-shadow: 0 0 20px 15px #91918d5e;
+                img{
+                    // box-shadow: 0 0 20px 15px #91918d5e;
+                    border-radius: 1rem;
+                }
+            }
+    
+            .projectData{
+                display: flex;
                 flex-direction: column;
                 align-content: center;
                 align-items: center;
                 transition: all 0.3s ease-in-out;
-
+        
                 .name{
                     font-size: 16pt;
                     font-weight: 600;
                     margin-top: 20px;
+                    color: rgb(49, 46, 46);
                 }
-
+        
                 .tech{
                     font-size: 12pt;
                     font-weight: 600;
-                    color: #ff7242;
+                    color: #e31b6d;
                 }
-
+        
                 .toCode{
-                    margin: 50px 0;
-                    a{
-                        padding: 10px;
-                        font-size: 12pt;
-                        font-weight: 600;
-                        border-radius: 0.125rem;
-                        box-sizing: border-box;
-                        border: 1px solid #ff7242;
-                        text-align: center;
-                        width: 105px;
+                    margin: 10px 0;
 
+                    .codeImg{
+                        width: 100%;
+                        margin:  0 10px ;
                     }
-
-                    &:hover{
-                        a{
-                            border: 1px solid #ff7242;
-                            background-color: #ff7242;
-                            color: #FFFF;
-                        }
-
-                    }
-                }
-            }
-
-            &:hover{
-                &>.img{
-                    opacity: 0.2;
-                }
-                &>.imgHover{
-                    display: flex;
-                    opacity: 1;
-                    z-index: 0;
                 }
             }
         }
+
     }
 }

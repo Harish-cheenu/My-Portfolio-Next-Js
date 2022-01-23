@@ -29,6 +29,8 @@
                 border-radius: 0.125rem; 
                 width: 40%;
                 height: 1.5rem;
+                // transition-property: width;
+                
                 // margin-left: -11.5%;
                 // box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
               }
@@ -40,6 +42,14 @@
             background-color: #ff6129;
             border-radius: 0.125rem; 
             }
+            progress::-moz-progress-bar {
+                background-color: #ff6129;
+                border-radius: 0.125rem; 
+            }
+            progress:indeterminate::-moz-progress-bar {
+                width: 0;
+              }
+           
 
             &__Pre{
                 color: #000;

@@ -1,22 +1,35 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-
-import React from 'react';
+import React, { useEffect } from 'react';
 // import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
 import Header from '../Header/Header';
 import styles from './Intro.module.scss'
 import images from '../../assets/images';
 import Image from 'next/image';
+import { textIntro } from '../Anime/Anime'
 
 const Intro = () => {
     const Title  ={
         title: "Hello, I'm",
         name: "Harish Narayanasamy."
     }
+    
+    function triggerHome(): void{
+        textIntro('title')
+        textIntro('.Typewriter')
+        textIntro('.Intro_main__MoreBtn__xd75x')
+    }
+    useEffect(() => {
+    
+        triggerHome()
+    }, []);
+    
+    
+    
     return (
         <>
         <main className={styles.main} id='home'>
-            <title>
+            <title className={styles.title}>
                 {Title?.title}
             <span>{Title?.name}</span>
             </title>
